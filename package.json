@@ -1,0 +1,25 @@
+{
+  "name": "patterns-using-typescript",
+  "version": "1.0.0",
+  "description": "Patters a refresher using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushruthm/patterns-using-typescript.git"
+  },
+  "keywords": [
+    "Design",
+    "patterns",
+    "using",
+    "typescript"
+  ],
+  "author": "Sushruth Madyalamajalu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sushruthm/patterns-using-typescript/issues"
+  },
+  "homepage": "https://github.com/sushruthm/patterns-using-typescript#readme"
+}

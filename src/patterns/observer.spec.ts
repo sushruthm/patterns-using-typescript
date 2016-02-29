@@ -1,6 +1,6 @@
 import * as observer from  './observer';
 
-describe("Observer test", () => {
+describe("Observer: ", () => {
     
     /* test setup */
     var obj1: observer.IObservable = {
@@ -19,7 +19,7 @@ describe("Observer test", () => {
     var obj2 = new ObserverTester();
    
     /* end test setup */
-    it("verify observers get called.", () => {
+    it("call notify()", () => {
         var sub = new observer.Subject();
         sub.add(obj1);
         sub.add(obj2);
@@ -31,4 +31,21 @@ describe("Observer test", () => {
         expect(obj1.notify).toHaveBeenCalled();
         expect(obj2.notify).toHaveBeenCalled();
     });
+    
+    it("add observer", ()=>{
+        var sub = new observer.Subject();
+        sub.add(obj1);
+        sub.add(obj2);
+        expect(sub.observableList.length).toBe(2);
+    })
+    
+    it("remove observer", ()=>{
+        var sub = new observer.Subject();
+        sub.add(obj1);
+        sub.add(obj2);
+        
+        sub.remove(obj1);
+        expect(sub.observableList.length).toBe(1);
+    })
+
 })

@@ -1,7 +1,7 @@
 /**
  * Singleton
  */
-export class SingletonImpl {
+class SingletonImpl {
     constructor() {
         
     }
